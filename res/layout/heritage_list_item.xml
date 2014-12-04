@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/h_icon"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_action_user" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/h_icon"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/h_icon"
+		android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:text="Name"
+        android:scrollHorizontally="false"
+        android:minLines="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/type"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="1dp"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:text="date"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="16sp"
+        android:textStyle="normal|italic" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="1dp"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:text="type"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="15sp" />
+
+</RelativeLayout>
